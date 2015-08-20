@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deptname:</strong>
+  <%= @department.deptname %>
+</p>
+
+<p>
+  <strong>Totalfaculty:</strong>
+  <%= @department.totalfaculty %>
+</p>
+
+<p>
+  <strong>Subjectsoffered:</strong>
+  <%= @department.subjectsoffered %>
+</p>
+
+<p>
+  <strong>Durationofcourse:</strong>
+  <%= @department.durationofcourse %>
+</p>
+
+<p>
+  <strong>Totstudents:</strong>
+  <%= @department.totstudents %>
+</p>
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>

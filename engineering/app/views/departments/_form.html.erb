@@ -1,0 +1,37 @@
+<%= form_for(@department) do |f| %>
+  <% if @department.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@department.errors.count, "error") %> prohibited this department from being saved:</h2>
+
+      <ul>
+      <% @department.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deptname %><br>
+    <%= f.text_field :deptname %>
+  </div>
+  <div class="field">
+    <%= f.label :totalfaculty %><br>
+    <%= f.number_field :totalfaculty %>
+  </div>
+  <div class="field">
+    <%= f.label :subjectsoffered %><br>
+    <%= f.text_field :subjectsoffered %>
+  </div>
+  <div class="field">
+    <%= f.label :durationofcourse %><br>
+    <%= f.text_field :durationofcourse %>
+  </div>
+  <div class="field">
+    <%= f.label :totstudents %><br>
+    <%= f.number_field :totstudents %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deptname: MyString
+  totalfaculty: 1
+  subjectsoffered: MyString
+  durationofcourse: MyString
+  totstudents: 1
+
+two:
+  deptname: MyString
+  totalfaculty: 1
+  subjectsoffered: MyString
+  durationofcourse: MyString
+  totstudents: 1
